@@ -1,0 +1,4 @@
+- Evidenciar la pirámide la automatizacion o ISA-95 para su proyecto.
+- Imagen de la arquitectura de comunicaciones y descripción de las comunicaciones utilizadas para el proyecto, identificando protocolos, canales, niveles de la pirámide de automatización donde son utilizadas.
+- Si hubo valor agregado en el proyecto visualizarlo en la arquitectura de comunicaciones.
+- Diagramas de instrumentación (identificación de sensores y actuadores) de las diversas etapas del proceso.
