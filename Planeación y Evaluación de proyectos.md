@@ -22,9 +22,19 @@ Por ello, se requiere implementar una solución de automatización integral que 
 
 ## Estructura de Desglose del Trabajo (EDT)
 
-![](Imagenes/Estructura de desglose de trabajo.png)
+![](Imagenes/EDT.png)
 
 ## Cronograma del proyecto (Diagrama de Gannt) 
+
+El cronograma del proyecto se gestiono en la aplicación Notion. Esta plataforma fue seleccionada por su capacidad para facilitar el control y seguimiento detallado de las actividades, incluyendo la asignación de responsabilidades, el estado de ejecución (tareas por hacer) y la definición de la prioridad o grado de importancia.
+
+El acceso al diagrama interactivo y a la información actualizada del cronograma está disponible a través del siguiente enlace:
+
+https://www.notion.so/2892871856e580928ec8ce7f015ae57f?v=2892871856e580338b6d000c48414374&source=copy_link
+
+Una representación visual del cronograma se presenta a continuación:
+
+![](Imagenes/Gantt.png)
 
 ## Hoja de Excel donde se determine presupuesto de adquisiciones, costos del proyecto y flujos de caja.
 
@@ -33,5 +43,7 @@ Por ello, se requiere implementar una solución de automatización integral que 
 ## Actas firmadas por los integrantes del equipo. (Acta de inicio, actas de reuniones etc)
 
 ## Modelo de negocio. (Modelo Canva de propuesta de valor)
+
+![](Imagenes/Canvadenegocio.png)
 
 ## Oferta comercial de la propuesta de automatización.
