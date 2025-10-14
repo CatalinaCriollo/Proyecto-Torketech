@@ -1,4 +1,10 @@
-- Análisis para justificar una robotización y el valor agregado del uso del robot en el proceso.
-- 
-• Diseño de celda robotizada considerando relación con espacio, flujo de producto, interacción con personal,
-seguridad funcional y agarre del robot.
+# Celda de Manufactura Robotizada
+
+Para agilizar la producción de la planta, se plantea una celda robótica, en la cual un brazo robótico alimentará tornos CNC para el maquinado de los blanks de los engranajes cónicos y helicoidales, o los tornillos sin fin. 
+
+Será una celda con robot, ya que la operación principal será realizada por los tornos. El robot alimentará las CNC y recogerá las piezas ya maquinadas y las colocará en bandas transportadoras para luego llevarlas al almacenamiento antes de ser enviadas a tratamiento térmico (o en caso de conseguir la máquina para el tratamiento, las transportará para la estación donde se realice). De esta manera, se generarán suficientes piezas para que la demora que toma el tratamiento térmico de las piezas, se dispongan de las suficientes para ser las siguientes en ser llevadas a tratamiento. También contará con una talladora, para maquinar los engranes (en caso de estar ocupada y que salga otra pieza para ser tallada, se dejará en transporte hacia otra estación con un operario y talladora). 
+
+La celda contará con el robot y su respectivo controlador, el cual conectará con el PLC por medio de ethernet, para recibir las señales necesarias para realizar la alimentación de los tornos CNC y la talladora. Tendrá almacenes para los blanks de los engranes, para poder mantener los tornos trabajando y generar piezas suficientes para cumplir con la producción. Contará con bandas transportadoras para dejar las piezas que continuarán con su maquinado fuera de la celda. La celda no necesitará la intervención de un operario para la producción. Se plantea un layout en U, para que el robot pueda alcanzar a realizar la recogida de las piezas y colocarlas en la máquina que realizará el proceso. Se plantea encerrar la celda y que deje de funcionar cuando no esté cerrada la celda, y mientras no se presione un botón de inicio desde fuera de la misma después de cerrarla, para permitir el mantenimiento de equipos en la celda.
+
+Posibles riesgos que se pueden presentar en la celda son de atrapamiento por parte de las bandas transportadoras y aplastamiento por parte de la operación del brazo robótico. Los daños pueden ser desde contusiones, hasta extremidades rotas o la muerte. Debido a que la celda se plantea para que operarios no estén dentro de esta al momento de su operación, el tiempo de exposición al peligro es bajo. 
+
