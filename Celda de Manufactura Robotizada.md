@@ -10,7 +10,10 @@ Será una celda con robot, ya que la operación principal será realizada por la
 
 ## Elementos de la celda robótica
 
-La celda contará con el robot y su respectivo controlador, el cual conectará con el PLC por medio de ethernet, para recibir las señales necesarias para realizar la alimentación de los tornos CNC, las fresadoras CNC y la talladoras. Tendrá almacenes para las piezas a maquinar y contará con bandas transportadoras. La celda no necesitará la intervención de operarios para la producción, pero sí para mantenimiento y el llenado de almacenes. Se plantea un layout en U, con el robot en el centro para que pueda alcanzar a realizar la recogida de las piezas y colocarlas en la máquina que realizará el proceso. 
+La celda contará con el robot y su respectivo controlador, el cual conectará con el PLC por medio de ethernet, para recibir las señales necesarias para realizar la alimentación de los tornos CNC, las fresadoras CNC y la talladoras. Tendrá almacenes para las piezas a maquinar y contará con bandas transportadoras. La celda no necesitará la intervención de operarios para la producción, pero sí para mantenimiento y el llenado de almacenes. Se plantea un layout en U, con el robot en el centro para que pueda alcanzar a realizar la recogida de las piezas y colocarlas en la máquina que realizará el proceso.
+
+![](Imagenes/Layout_celda.png)
+
 
 ## Evaluación de riesgo y medidas de seguridad
 
