@@ -5,9 +5,17 @@ La industria 4.0 propone la implementación de tecnologías avanzadas junto a es
 
 ![](Imagenes/Piramide.png)
 
-Nuestra propuesta explora la pirámide de la automatización en los niveles de sensores y actuadores con la celda robótica y automatización de máquinas, en el nivel de control con PLC que se encargue de dirigir el proceso de producción, y en el nivel de SCADA, dónde podremos supervisar la planta.
+Nuestra propuesta se alinea con este enfoque mediante la exploración de los diferentes niveles de la pirámide de automatización:
 
-Para este proyecto, se implementarán robots que apoyen en los procesos de producción para reducir tiempos muertos y reducir tiempos de operación. Implementación de sistemas SCADA que permiten el monitoreo de la producción y el estado de las máquinas. El desarrollo de un gemelo digital, para simular las condiciones de la producción, predecir fallos de las máquinas, y evaluar posibles cambios en la planta, permitiendo observar una predicción del cambio de los indicadores de producción sin realizar cambios en la planta, permitiendo tomar decisiones sin afectar la producción.
+- En el nivel de campo, se integran sensores, actuadores y la celda robótica, que permiten la ejecución automatizada de operaciones de mecanizado.
+
+- En el nivel de control, se implementa un PLC encargado de coordinar el proceso de producción y garantizar su sincronización.
+
+- En el nivel de supervisión, se desarrolla un sistema SCADA, que permitirá monitorear en tiempo real el estado de las máquinas, las variables críticas del proceso y la trazabilidad de la producción.
+
+Adicionalmente, se plantea el desarrollo de un gemelo digital de la línea de producción. Este modelo virtual permitirá simular condiciones operativas, predecir fallos y evaluar cambios de diseño o parámetros, anticipando su efecto sobre los indicadores de desempeño sin afectar la operación real.
+
+Con esta integración tecnológica, se espera poder reducir tiempos muertos, optimizar el uso de recursos, mejorar la planificación productiva y avanzar hacia un entorno de manufactura inteligente, alineado con los principios de la Industria 4.0.
 
 
 
