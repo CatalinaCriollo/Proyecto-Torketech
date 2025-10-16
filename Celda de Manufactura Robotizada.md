@@ -6,7 +6,7 @@ Para agilizar la producción de la planta, se plantea una celda robótica, en la
 
 Será una celda con robot, ya que la operación principal será realizada por las diferentes máquinas que se encuentren en la celda. El robot alimentará las máquinas y en caso de que cuando termine la operación, la maquina de la operación siguiente ya esté disponible, la alimente, y en caso de que no, que se transporten para que operarios sigan con el maquinado de la pieza. El robot tendrá la posibilidad de colocar las piezas en una banda transportadora, que permitirá que la pieza llegué cerca de las estaciones de trabajo, o al almacén, para disminuir el tiempo que toma el transporte de las piezas. Se posicionarán almacenes en la celda para que disponga de suficientes piezas para iniciar su maquinado. Se llenarán los almacenes al inicio de cada turno, antes de que se ponga en funcionamiento la celda. 
 
-(imagen celda con robot)
+![](Imagenes/celda_con_robot.png)
 
 ## Elementos de la celda robótica
 
