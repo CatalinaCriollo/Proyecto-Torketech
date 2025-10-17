@@ -84,7 +84,7 @@ Los principales cuellos de botella se presentan en las **operaciones de tallado 
   1 turno × 8 h/día × 5 días = **40 h/semana = 2 400 min/semana** (por recurso/máquina).
 
 - **Tiempos por operación:**  
-  Basados en los valores (en minutos por pieza) de la imagen compartida.  
+  Basados en los valores (en minutos por pieza).  
   Los tiempos en rojo/alto fueron tomados directamente:  
   - Pintado = 180  
   - Templado (espera sinfín) = 150  
