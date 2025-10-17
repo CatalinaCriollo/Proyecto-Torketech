@@ -5,10 +5,6 @@ El siguiente DOP toma en cuenta todas las operaciones que se deben cumplir en la
 [![operaciones2-3.png](https://i.postimg.cc/cLHYnXkZ/operaciones2-3.png)](https://postimg.cc/xcwcrySF)
 
 ##  Análisis del Estado Actual de la Planta RAMFE
-(Intente resumir lo del excel, si estaria bien asi?)
-
-
----
 
 ###  1. Maquinaria Disponible
 
