@@ -2,14 +2,14 @@
 
 ## Definición del proyecto
 
-El proceso de fabricación de motorreductores en RAMFE presenta una baja integración de sistemas automatizados, con operaciones manuales que generan ineficiencias, variabilidad en la calidad y limitaciones en la trazabilidad del proceso.
-La ausencia de una arquitectura de control y supervisión unificada impide una gestión efectiva de la producción y la detección temprana de fallas.
-Por ello, se requiere implementar una solución de automatización integral que integre control, robotización y monitoreo digital para optimizar la productividad, reducir errores y garantizar la estabilidad del proceso.
+El proceso de fabricación de motorreductores en una empresa de referencia como RAMFE presenta actualmente una baja integración de sistemas automatizados, con un alto grado de operaciones manuales que pueden generar ineficiencias operativas, variabilidad en la calidad del producto y limitaciones en la trazabilidad del proceso productivo. La ausencia de una arquitectura de control y supervisión unificada dificulta la gestión eficiente de la producción y retrasa la detección temprana de fallas o desviaciones.
+
+Por ello, se plantea la necesidad de implementar una solución de automatización integral que combine control, robotización y monitoreo digital, orientada a optimizar la productividad, reducir los errores humanos y asegurar la estabilidad y consistencia del proceso de fabricación.
 
 ## Objetivos
 
 ### Objetivo general
-- Diseñar, simular y validar una solución integral de automatización industrial para el proceso de fabricación de motorreductores en RAMFE, que incremente la productividad y eficiencia de la línea de producción mediante la implementación de sistemas de control, robótica y supervisión digital.
+- Diseñar y simular una solución de automatización para la fabricación de motorreductores en RAMFE, que incremente la productividad y eficiencia mediante sistemas de control, robótica y supervisión digital, con una meta de producción de 500 unidades mensuales de los tipos sin fin-corona, de engranajes cónicos y helicoidales.
 
 ### Objetivos específicos
 - Analizar el proceso actual de manufactura de motorreductores, identificando las etapas críticas y los cuellos de botella que puedan ser mejorados mediante automatización.
