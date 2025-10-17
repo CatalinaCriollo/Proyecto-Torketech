@@ -26,15 +26,15 @@ Debido a que se deben realizar labores de alistamiento todos los días, pero no 
 
 **Posibilidad de ocurrencia**
 
-Corte y atrapamiento: ya que se plantea que las maquinas no sean capaces de funcionar en los momentos en los que se encuentren operarios en la celda, y debido al uniforme de los operarios, es improbable que los atrapen las bandas transportadoras, se determina la posibilidad de ocurrencia como muy improbable, y se le asigna un valor LO=1.
+- Corte y atrapamiento: ya que se plantea que las maquinas no sean capaces de funcionar en los momentos en los que se encuentren operarios en la celda, y debido al uniforme de los operarios, es improbable que los atrapen las bandas transportadoras, se determina la posibilidad de ocurrencia como muy improbable, y se le asigna un valor LO=1.
 
-Aplastamiento: debido a que el brazo robótico no debería poder operar mientras haya operarios en la celda, se asigna una posibilidad de ocurrencia improbable y se asigna un valor LO=1.5.
+- Aplastamiento: debido a que el brazo robótico no debería poder operar mientras haya operarios en la celda, se asigna una posibilidad de ocurrencia improbable y se asigna un valor LO=1.5.
 
-Electricidad: no se tendrán conexiones descubiertas en la celda, pero es posible que daños imprevistos en cables puedan generar un accidente. Debido a que se trabajará con electricidad unicamente en las operaciones de mantenimiento, la posibilidad de ocurrencia se determina como improbable y se le asigna un valor LO=1.5.
+- Electricidad: no se tendrán conexiones descubiertas en la celda, pero es posible que daños imprevistos en cables puedan generar un accidente. Debido a que se trabajará con electricidad unicamente en las operaciones de mantenimiento, la posibilidad de ocurrencia se determina como improbable y se le asigna un valor LO=1.5.
 
 **Número de personas**
 
-Para labores de alistamiento y mantenimiento, se plantea la intervención de 2 operarios, po lo que se le asigna un valor NP=2.
+Para labores de alistamiento y mantenimiento, se plantea la intervención de 2 operarios, por lo que se le asigna un valor NP=2.
 
 **Severidad de posbible lesión**
 
@@ -46,11 +46,11 @@ Para labores de alistamiento y mantenimiento, se plantea la intervención de 2 o
 
 Ahora, utilizando la formula HRN = NP x FE x LO x DPH, podemos asignar un valor númerico a cada uno de los riesgos.
 
-- Corte y atrapamiento: HRN = 1 x 2.5 x 1 x 6 = 15
+- Corte y atrapamiento: HRN = 2 x 2.5 x 1 x 6 = 30
 
-- Aplastamiento: HRN = 1 x 2.5 x 1.5 x 15 = 56.25
+- Aplastamiento: HRN = 2 x 2.5 x 1.5 x 15 = 112.5
 
-- Electricidad: HRN = 1 x 2.5 x 1.5 x 10 = 37.5
+- Electricidad: HRN = 2 x 2.5 x 1.5 x 10 = 70
 
 De esta manera, se clasifican los riesgos de corte y atrapamiento como "bajo, pero posible", el riesgo de aplastamiento como "alto", y el riesgo electrico, aunque es una estimación, como "medio".
 
