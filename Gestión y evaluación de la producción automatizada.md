@@ -2,7 +2,7 @@
 
 El siguiente DOP toma en cuenta todas las operaciones que se deben cumplir en la fabricación de un motoreductor fabricado en la empresa RAMFÉ. Cabe remarcar que como se ve en la figura el total de tiempo acumulado en todas estas operaciones da un resultado de 750 minutos por pieza, sin embargo esta cantidad de minutos no contempla el número de máquinas que se deispone para hacer la misma operación ni tampoco si algunas de estas labores se fabrican en paralelo. Este análisis se realizará posteriormente evaluando primero los procesos que se realizan en paralelo o incluso 
 
-[![operaciones2-3.png](https://i.postimg.cc/cLHYnXkZ/operaciones2-3.png)](https://postimg.cc/xcwcrySF)
+[![operaciones2-6.png](https://i.postimg.cc/15z7mL9F/operaciones2-6.png)](https://postimg.cc/14LrM7VR)
 
 ##  Análisis del Estado Actual de la Planta RAMFE
 
