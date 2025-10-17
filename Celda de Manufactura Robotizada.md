@@ -42,18 +42,24 @@ Para labores de alistamiento y mantenimiento, se plantea la intervención de 2 o
 
 - Aplastamiento: debido a la naturaleza de los robots, el robot podría causar facilmente la muerte de un operario, por lo que se le asigna un valor DPH=15.
 
-- Electricidad:  adfasdfas
+- Electricidad:  La severidad del daño se evalúa como alta, ya que un contacto con electricidad industrial puede causar quemaduras graves o incluso electrocución, por lo que se le asigna un valor estimado de DPH=10.
 
 Ahora, utilizando la formula HRN = NP x FE x LO x DPH, podemos asignar un valor númerico a cada uno de los riesgos.
 
 - Corte y atrapamiento: HRN = 1 x 2.5 x 1 x 6 = 15
 
-- Aplastamiento: HRN = 1 x 2.5 x 1.5 x 15 = 93.75
+- Aplastamiento: HRN = 1 x 2.5 x 1.5 x 15 = 56.25
 
-- Electricidad: HRN = 1 x 2.5 x 1.5 x DPH = ???
+- Electricidad: HRN = 1 x 2.5 x 1.5 x 10 = 37.5
 
-De esta manera, se clasifican los riesgos de corte y atrapamiento como "bajo, pero posible", el riesgo de aplastamiento como "alto", y el riesgo electrico como "por definir".
+De esta manera, se clasifican los riesgos de corte y atrapamiento como "bajo, pero posible", el riesgo de aplastamiento como "alto", y el riesgo electrico, aunque es una estimación, como "medio".
 
-Como respuesta a lo anterior, se implementarán medidas de seguridad. La celda estará encerrada por una cerca para evitar el paso de operarios por el área de trabajo del robot. En respuesta al riesgo alto de aplastamiento, se plantea que el robot de la celda no pueda iniciar su funcionamiento mientras que la celda esté abierta, y para evitar accidentes, que solo pueda operar cuando esté cerrada la celda, y posteriormente, se pulsen dos botones, separados lo suficiente para que se requiera de 2 personas para pulsarlos simultaneamente. Se requerirá que los operarios entren con los equipos de protección personal y se instalará la señalización necesaria para indicar los peligros de corte y atrapamiento. 
+Como respuesta a lo anterior, se implementarán medidas de seguridad. 
+- La celda estará encerrada por una cerca para evitar el paso de operarios por el área de trabajo del robot. 
+- En respuesta al riesgo alto de aplastamiento, se plantea que el robot de la celda no pueda iniciar su funcionamiento mientras que la celda esté abierta.
+- Para evitar accidentes, que solo pueda operar cuando esté cerrada la celda, y posteriormente, se pulsen dos botones, separados lo suficiente para que se requiera de 2 personas para pulsarlos simultaneamente.
+- Se requerirá que los operarios entren con los equipos de protección personal.
+- Se instalará la señalización necesaria para indicar los peligros de corte y atrapamiento.
+- Mantenimiento eléctrico preventivo con sistema de corte de energía.
 
 
