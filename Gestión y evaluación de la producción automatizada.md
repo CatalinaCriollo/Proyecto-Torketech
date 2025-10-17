@@ -55,15 +55,19 @@ Los principales cuellos de botella se presentan en las **operaciones de tallado 
 
 
 • Layout (distribución de planta actual)
+
 [![layout-Actual.jpg](https://i.postimg.cc/kGSQGFpP/layout-Actual.jpg)](https://postimg.cc/CnFB6D0c)
 
+
 • Diagrama de Espagueti (flujo físico de materiales)
+
 [![diagram-Espagueti.jpg](https://i.postimg.cc/wvyJ4QHN/diagram-Espagueti.jpg)](https://postimg.cc/wyz77J1x)
 
 
 • Diagrama VSM (Value Stream Mapping) antes de automatizar.
 
 [![diagram-Espagueti.jpg](https://i.postimg.cc/wvyJ4QHN/diagram-Espagueti.jpg)](https://postimg.cc/wyz77J1x)
+
 • Presentar indicadores y parámetros que se puedan reportar para fabricar un lote de 500 motorreductores por mes.
 (Takt, Tc, Tsu, Rp, MLT).
 
