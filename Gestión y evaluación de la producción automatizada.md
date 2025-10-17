@@ -70,14 +70,11 @@ Los principales cuellos de botella se presentan en las **operaciones de tallado 
 
 • Diagrama VSM (Value Stream Mapping) antes de automatizar.
 
-[![diagram-Espagueti.jpg](https://i.postimg.cc/wvyJ4QHN/diagram-Espagueti.jpg)](https://postimg.cc/wyz77J1x)
+[![Copia-de-VSM-actual-2.png](https://i.postimg.cc/XvJ7HqTF/Copia-de-VSM-actual-2.png)](https://postimg.cc/cvpS6x14)
 
 • Presentar indicadores y parámetros que se puedan reportar para fabricar un lote de 500 motorreductores por mes.
 (Takt, Tc, Tsu, Rp, MLT).
 
-• Análisis con el software de simulación de planta en donde se incorporen aspectos de fallas de equipos,
-disponibilidad, calidad, set-up, tiempos de producción, balance de líneas, colas, determinación de OEE, aplicación
-de estrategias de pre- automatización.
 
 # Análisis de tiempos y capacidad productiva
 
@@ -234,3 +231,10 @@ Con los tiempos actuales y un solo recurso por tipo, **no es factible** cumplir 
 
 
 • Diagrama VSM (Value Stream Mapping) despues de automatizar.
+
+[![VSM-actual-1.png](https://i.postimg.cc/PrTLbXrx/VSM-actual-1.png)](https://postimg.cc/jC3dtrf0)
+
+• Análisis con el software de simulación de planta en donde se incorporen aspectos de fallas de equipos,
+disponibilidad, calidad, set-up, tiempos de producción, balance de líneas, colas, determinación de OEE, aplicación
+de estrategias de pre- automatización.
+
