@@ -1,21 +1,37 @@
-# Implementación Industria 4.0
+# Automatización e Industria 4.0
 
-La industria 4.0 propone la implementación de tecnologías avanzadas junto a estrategias de organización para lograr que los procesos de producción se realicen de una forma más eficiente. De esta manera, las industrias avanzan hacia una mayor tecnificación, permitiendo monitorear y obtener datos de la producción en tiempo real. El uso de robots para trabajo continuo y menores tiempos de producción, uso de IA para analizar los datos de la producción o demanda a futuro, Internet de las cosas (IoT) para la obtención de datos de planta, el desarrollo y uso de modelos digitales para simular el funcionamiento de la planta e indicadores de producción de la planta, entre otros, son ejemplos de cómo se pueden implementar las nuevas tecnologías para mejorar indicadores de producción y mejorar la organización de la empresa. 
+La Industria 4.0 integra tecnologías avanzadas y métodos de organización que permiten optimizar la producción, mejorar la eficiencia y obtener datos del proceso en tiempo real. Su aplicación incluye el uso de robots para operaciones continuas, sistemas IoT para captura de información, análisis mediante IA y modelos virtuales capaces de simular el comportamiento de la planta antes de realizar cambios en el sistema real.
 
+Nuestra propuesta adopta este enfoque a través de los niveles de la pirámide de automatización:
 
-![](Imagenes/Piramide.png)
+* Nivel de campo: se integran sensores, actuadores y la celda robótica, responsables de ejecutar las operaciones automáticas del proceso.
 
-Nuestra propuesta se alinea con este enfoque mediante la exploración de los diferentes niveles de la pirámide de automatización:
+* Nivel de control: un PLC coordina la secuencia de producción y sincroniza los dispositivos involucrados.
 
-- En el nivel de campo, se integran sensores, actuadores y la celda robótica, que permiten la ejecución automatizada de operaciones de mecanizado.
+* Nivel de supervisión: un sistema SCADA permite visualizar en tiempo real el estado de las máquinas, variables críticas y trazabilidad del proceso.
 
-- En el nivel de control, se implementa un PLC encargado de coordinar el proceso de producción y garantizar su sincronización.
-
-- En el nivel de supervisión, se desarrolla un sistema SCADA, que permitirá monitorear en tiempo real el estado de las máquinas, las variables críticas del proceso y la trazabilidad de la producción.
-
-Adicionalmente, se plantea el desarrollo de un gemelo digital de la línea de producción. Este modelo virtual permitirá simular condiciones operativas, predecir fallos y evaluar cambios de diseño o parámetros, anticipando su efecto sobre los indicadores de desempeño sin afectar la operación real.
-
-Con esta integración tecnológica, se espera poder reducir tiempos muertos, optimizar el uso de recursos, mejorar la planificación productiva y avanzar hacia un entorno de manufactura inteligente, alineado con los principios de la Industria 4.0.
+* Gemelo digital: se desarrolla un modelo virtual que simula la línea de producción, útil para evaluar condiciones operativas, anticipar fallos y probar ajustes sin intervenir la planta física. reducir tiempos muertos, optimizar el uso de recursos, mejorar la planificación productiva y avanzar hacia un entorno de manufactura inteligente, alineado con los principios de la Industria 4.0.
 
 
+## Arquitectura de Comunicaciones
 
+La arquitectura del sistema se organiza en tres niveles: sensores y actuadores, control y supervisión. Cada uno se comunica mediante protocolos industriales específicos, como se muestra en la imagen adjunta.
+
+1. **Nivel Sensores y Actuadores – Siemens NX** 
+
+En este nivel se encuentra Siemens NX, utilizado como entorno de simulación y digital twin.
+NX genera señales equivalentes a un sistema físico: lecturas de sensores, posiciones, estados y eventos del proceso. Toda esta información se envía al nivel superior mediante OPC UA, un protocolo seguro y multiplataforma que permite que el digital twin funcione como un dispositivo real dentro de la red industrial.
+
+2. **Nivel Control – Studio 5000 y Studio 5000 Emulate**
+
+Este nivel ejecuta la lógica del proceso utilizando Studio 5000 para la programación del PLC y Studio 5000 Emulate para simular el comportamiento del controlador sin hardware físico.
+Aquí residen las secuencias, temporizadores y condiciones lógicas que gestionan el proceso.
+Los datos de este nivel se exponen hacia el SCADA mediante OPC DA (OPC Classic), a través de un servidor como RSLinx, que permite publicar los tags del PLC para su monitoreo.
+
+3. **Nivel SCADA – Supervisión e Historian**
+
+En este nivel se ubica la plataforma SCADA, encargada de la visualización del proceso, gestión de alarmas e historización de variables.
+El SCADA recibe información tanto del PLC (vía OPC DA) como del digital twin (vía OPC UA), integrando datos del sistema real y del modelo virtual en una misma interfaz.
+Además, se comunica por Ethernet local con estaciones de ingeniería y terminales HMI para mantenimiento, ajustes y seguimiento técnico.
+
+![](Imagenes/Comunicaciones.jpeg)
