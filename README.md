@@ -1,4 +1,6 @@
-# Proyecto APM 2025-2 TorkeTech
+# Proyecto APM 2025-2 
+
+![](Imagenes/logoTorke-removebg-preview.png)
 
 ## Integrantes
 - Catalina Criollo Castelblanco
