@@ -1,4 +1,4 @@
-# Planeación y Evaluación de proyectos
+# Planeación del proyecto
 
 ## Definición del proyecto
 
