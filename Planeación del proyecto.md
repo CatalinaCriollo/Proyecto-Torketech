@@ -9,7 +9,7 @@ Por ello, se plantea la necesidad de implementar una solución de automatizació
 ## Objetivos
 
 ### Objetivo general
-- Diseñar y simular una solución de automatización para la fabricación de motorreductores en RAMFE, que incremente la productividad y eficiencia mediante sistemas de control, robótica y supervisión digital, con una meta de producción de 500 unidades mensuales de los tipos sin fin-corona, de engranajes cónicos y helicoidales.
+- Diseñar y simular una solución de automatización para la fabricación de motorreductores, que incremente la productividad y eficiencia mediante sistemas de control, robótica y supervisión digital, con una meta de producción de 500 unidades mensuales de los tipos sin fin-corona, de engranajes cónicos y helicoidales.
 
 ### Objetivos específicos
 - Analizar el proceso actual de manufactura de motorreductores, identificando las etapas críticas y los cuellos de botella que puedan ser mejorados mediante automatización.
@@ -36,9 +36,3 @@ Una representación visual del cronograma se presenta a continuación:
 
 ![](Imagenes/Gantt.png)
 
-
-## Modelo de negocio. (Modelo Canva de propuesta de valor)
-
-![](Imagenes/Canvadenegocio.png)
-
-## Oferta comercial de la propuesta de automatización.
