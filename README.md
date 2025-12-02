@@ -6,4 +6,3 @@
 - Catalina Criollo Castelblanco
 - Stivens Camilo Guevara Moran
 - Diego Fernando Malagon Saenz
-- Juan Felipe Triana Aguilera
