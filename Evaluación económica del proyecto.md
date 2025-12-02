@@ -1,6 +1,6 @@
 # Evaluación Económica del proyecto
 
-## Presupuesto de Adquisiciones – Evaluación de Proyectos (APM)
+## Presupuesto de Adquisiciones 
 
 El presente presupuesto compila todas las adquisiciones necesarias para la implementación del sistema automatizado de fabricación de motorreductores, considerando los costos iniciales (CAPEX), los costos operativos anuales (OPEX) y las proyecciones financieras para 10 años. 
 Todos los datos y calculos necesarios estan en el excel Lista de gastos.
