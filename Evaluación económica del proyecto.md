@@ -114,6 +114,99 @@ Se proyecta la fabricación mensual de tres tipos de motorreductores:
 | Engranajes helicoidales |   180      |     $2.920.000  |
 
 
+## 5. Estructura de Financiamiento del Proyecto
+
+El proyecto se financia mediante una combinación de **capital propio (70%)** y **deuda financiera (30%)**, con el fin de analizar el efecto del apalancamiento en la rentabilidad del inversionista.  
+
+El CAPEX total del proyecto es:
+
+CAPEX = $490.760.000
+
+Por lo tanto:
+
+Deuda = 30% × 490.760.000  
+Deuda = $147.228.000
+### Condiciones de la deuda
+- **Tasa de interés (Kd):** 20% anual  
+- **Plazo:** 10 años  
+- **Método de amortización:** Sistema francés (cuota fija anual)  
+- **Cuota anual:**  
+
+### Condiciones de la deuda
+- Tasa de interés (Kd): 20% anual  
+- Plazo: 10 años  
+- Cuota fija (Sistema Francés)
+
+### Cálculo de la cuota anual
+
+Fórmula del sistema francés (cuota fija):
+
+Cuota = (Kd × PV) / [1 − (1 + Kd)^(-n)]
+
+Donde:
+- PV = 147.228.000  
+- Kd = 0,20  
+- n = 10  
+
+Sustitución:
+
+Cuota = (0,20 × 147.228.000) / [1 − (1,20)^(-10)]
+
+Resultado:
+
+**Cuota anual = $35.117.228,45**
+
+## 6. Tabla de Amortización de la Deuda (10 años)
+
+La siguiente tabla muestra la evolución de la deuda, incluyendo saldo inicial, intereses, amortización de capital y saldo final. Estos valores alimentan el flujo de caja del inversionista.
+
+| Periodo | Saldo inicial       | Cuota             | Interés           | Capital            | Saldo final        |
+|--------:|----------------------|-------------------|-------------------|--------------------|---------------------|
+| 0        | $147.228.000,00     | —                 | —                 | —                  | $147.228.000,00     |
+| 1        | $147.228.000,00     | $35.117.228,45    | $29.445.600,00    | $5.671.628,45      | $141.556.371,55     |
+| 2        | $141.556.371,55     | $35.117.228,45    | $28.311.274,31    | $6.805.954,14      | $134.750.417,41     |
+| 3        | $134.750.417,41     | $35.117.228,45    | $26.950.083,48    | $8.167.144,97      | $126.583.272,44     |
+| 4        | $126.583.272,44     | $35.117.228,45    | $25.316.654,49    | $9.800.573,96      | $116.782.698,48     |
+| 5        | $116.782.698,48     | $35.117.228,45    | $23.356.539,70    | $11.760.688,75     | $105.022.009,72     |
+| 6        | $105.022.009,72     | $35.117.228,45    | $21.004.401,94    | $14.112.826,51     | $90.909.183,22      |
+| 7        | $90.909.183,22      | $35.117.228,45    | $18.181.836,64    | $16.935.391,81     | $73.973.791,41      |
+| 8        | $73.973.791,41      | $35.117.228,45    | $14.794.758,28    | $20.322.470,17     | $53.651.321,24      |
+| 9        | $53.651.321,24      | $35.117.228,45    | $10.730.264,25    | $24.386.964,20     | $29.264.357,04      |
+| 10       | $29.264.357,04      | $35.117.228,45    | $5.852.871,41     | $29.264.357,04      | $0,00               |
+
+---
+
+## 7. Cálculo del Costo de Capital (Ke) mediante CAPM
+
+Para determinar la rentabilidad mínima exigida por los inversionistas, se utiliza el modelo **CAPM (Capital Asset Pricing Model)**.
+
+### Fórmula:
+
+Ke = rf + Beta × (rm − rf)
+
+
+### Parámetros utilizados:
+- **Tasa libre de riesgo (rf):** 3.5%  
+- **Rendimiento del mercado (rm):** 15%  
+- **Beta del proyecto (β):** 1.07  
+
+### Cálculo:
+
+### Sustitución:
+Ke = 0,035 + 1,07 × (0,15 − 0,035)
+
+Ke = 0,035 + 1,07 × 0,115  
+Ke = 0,035 + 0,12305  
+Ke = 0,15805
+
+Este Ke se utiliza como **tasa de descuento** para:
+- El **VPN del proyecto** (sin deuda)  
+- El **VPN del inversionista** (con deuda)  
+
+y sirve como referencia para evaluar si el proyecto genera valor por encima del riesgo asumido.
+
+
+
 ## Flujo de Caja
 
 El siguiente flujo de caja resume el comportamiento económico del proyecto durante un horizonte de 10 años, incorporando ingresos, costos operativos, depreciación, impuestos, inversiones iniciales (CAPEX) y el efecto de la financiación mediante deuda.
