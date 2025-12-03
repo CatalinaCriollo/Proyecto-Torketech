@@ -17,49 +17,158 @@ La celda contará con el robot y su respectivo controlador, el cual conectará c
 
 ## Evaluación de riesgo y medidas de seguridad
 
-Peligros que se pueden presentar en la celda son de atrapamiento y corte por parte de las bandas transportadoras y las máquinas presentes en la celda, aplastamiento por parte del movimiento del brazo robótico, . Al tener elementos que funcionan con electricidad, implica también un peligro eléctrico. Finalmente, ya que los operarios deben mover piezas dentro de la celda, hay presente un peligro ergonómico. 
-Para la evaluación de los riesgos, se utiliza el método Hazard Rating Number (HRN)
+### 1. Identificación de Peligros (ISO 12100)
 
-**Frecuencia de exposición**
+Durante las operaciones de alistamiento, producción, mantenimiento y manipulación de piezas, se identificaron los siguientes grupos de peligros:
 
-Debido a que se deben realizar labores de alistamiento todos los días, pero no habrán operarios en la celda cuando está esté funcionando,  la frecuencia de exposición se determina como diaria, lo que da un valor FE=2.5
+**1.1 Peligros mecánicos**
 
-**Posibilidad de ocurrencia**
+  - Atrapamiento y corte en bandas transportadoras y mecanismos de las máquinas CNC.
+  
+  - Aplastamiento por colisión con el robot industrial.
+  
+  - Golpes o caída de piezas manipuladas por el robot.
+  
+  - Proyección de virutas o fragmentos durante operaciones de mecanizado.
 
-- Corte y atrapamiento: ya que se plantea que las maquinas no sean capaces de funcionar en los momentos en los que se encuentren operarios en la celda, y debido al uniforme de los operarios, es improbable que los atrapen las bandas transportadoras, se determina la posibilidad de ocurrencia como muy improbable, y se le asigna un valor LO=1.
+**1.2 Peligros eléctricos**
 
-- Aplastamiento: debido a que el brazo robótico no debería poder operar mientras haya operarios en la celda, se asigna una posibilidad de ocurrencia improbable y se asigna un valor LO=1.5.
+  - Contacto directo con componentes energizados durante mantenimiento.
+  
+  - Fallas de aislamiento o daños en cableado y gabinetes eléctricos.
 
-- Electricidad: no se tendrán conexiones descubiertas en la celda, pero es posible que daños imprevistos en cables puedan generar un accidente. Debido a que se trabajará con electricidad unicamente en las operaciones de mantenimiento, la posibilidad de ocurrencia se determina como improbable y se le asigna un valor LO=1.5.
+**1.3 Peligros ergonómicos**
 
-**Número de personas**
+  - Manipulación manual de piezas durante el alistamiento.
+  
+  - Alcances forzados y posturas no ergonómicas dentro de la celda.
 
-Para labores de alistamiento y mantenimiento, se plantea la intervención de 2 operarios, por lo que se le asigna un valor NP=2.
+**1.4 Peligros funcionales**
 
-**Severidad de posbible lesión**
+  - Movimientos inesperados del robot por fallos, reinicios o errores de programación.
+  
+  - Falla de sensores o enclavamientos que permiten acceso mientras el robot está habilitado.
 
-- Corte y atrapamiento: debido al tipo de maquinas utilizadas, la severidad de la lesión podría llegar a ser "pérdidad de una extremidad" o comparable, por lo que se le asigna un valor DPH=6.
+**1.5 Peligros relacionados con energía almacenada**
 
-- Aplastamiento: debido a la naturaleza de los robots, el robot podría causar facilmente la muerte de un operario, por lo que se le asigna un valor DPH=15.
+  - Compresores y actuadores neumáticos del gripper.
+  
+  - Tensión mecánica en puertas o mecanismos auxiliares.
 
-- Electricidad:  La severidad del daño se evalúa como alta, ya que un contacto con electricidad industrial puede causar quemaduras graves o incluso electrocución, por lo que se le asigna un valor estimado de DPH=10.
+### 2. Método de Evaluación HRN
 
-Ahora, utilizando la formula HRN = NP x FE x LO x DPH, podemos asignar un valor númerico a cada uno de los riesgos.
+La evaluación cuantitativa se realizó con el método Hazard Rating Number, el cual considera:
 
-- Corte y atrapamiento: HRN = 2 x 2.5 x 1 x 6 = 30
+  - NP (Número de personas expuestas): 2
+  
+  - FE (Frecuencia de exposición): diaria → 2.5
+  
+  - LO (Probabilidad de ocurrencia): según condición del peligro
+  
+  - DPH (Severidad del daño potencial): según tipo de lesión posible
 
-- Aplastamiento: HRN = 2 x 2.5 x 1.5 x 15 = 112.5
+La fórmula utilizada:
+HRN = NP × FE × LO × DPH
 
-- Electricidad: HRN = 2 x 2.5 x 1.5 x 10 = 70
+### 3. Riesgos Evaluados
+**3.1 Corte y atrapamiento**
 
-De esta manera, se clasifican los riesgos de corte y atrapamiento como "bajo, pero posible", el riesgo de aplastamiento como "alto", y el riesgo electrico, aunque es una estimación, como "medio".
+  - FE = 2.5
+  
+  - LO = 1 (muy improbable con cercado)
+  
+  - NP = 2
+  
+  - DPH = 6 (lesión grave: pérdida parcial de extremidad)
+HRN = 30 → Riesgo Bajo–Medio
 
-Como respuesta a lo anterior, se implementarán medidas de seguridad. 
-- La celda estará encerrada por una cerca para evitar el paso de operarios por el área de trabajo del robot. 
-- En respuesta al riesgo alto de aplastamiento, se plantea que el robot de la celda no pueda iniciar su funcionamiento mientras que la celda esté abierta.
-- Para evitar accidentes, que solo pueda operar cuando esté cerrada la celda, y posteriormente, se pulsen dos botones, separados lo suficiente para que se requiera de 2 personas para pulsarlos simultaneamente.
-- Se requerirá que los operarios entren con los equipos de protección personal.
-- Se instalará la señalización necesaria para indicar los peligros de corte y atrapamiento.
-- Mantenimiento eléctrico preventivo con sistema de corte de energía.
+**3.2 Aplastamiento por robot**
+
+  - FE = 2.5
+  
+  - LO = 1.5 (improbable, pero posible por falla del interlock)
+  
+  - NP = 2
+  
+  - DPH = 15 (lesión severa o fatal)
+HRN = 112.5 → Riesgo Alto
+
+**3.3 Riesgo eléctrico**
+
+  - FE = 2.5
+  
+  - LO = 1.5 (vulnerabilidad durante mantenimiento)
+  
+  - NP = 2
+  
+  - DPH = 10 (quemaduras severas o electrocución)
+HRN = 70 → Riesgo Medio
+
+### 4. Medidas de Seguridad Implementadas
+
+Las medidas de mitigación fueron seleccionadas siguiendo la jerarquía de control definida en ISO 12100: controles de ingeniería, dispositivos de protección, medidas administrativas y EPP.
+
+**4.1 Controles de ingeniería**
+
+• Cercado perimetral de la celda
+
+Estructura metálica con puertas equipadas con interlocks de seguridad PL d–e, evitando acceso durante operación automática.
+
+• Enclavamiento y control de acceso
+
+El robot se detiene de manera segura si cualquier puerta es abierta. Se utiliza restart inhibit para evitar reinicios automáticos.
+
+• Funciones de seguridad del robot (ISO 10218-1)
+
+  - STO (Safe Torque Off)
+  
+  - SLS (Safe Limited Speed) para programación
+  
+  - Safe Zones / Safe Position para limitar movimientos
+Estas funciones reducen el riesgo de aplastamiento.
+
+• Protección en transportadores
+
+Guardas físicas en puntos de atrapamiento y pulsadores de paro de emergencia cercanos.
+
+• Protección eléctrica (IEC 60204-1)
+
+Gabinetes cerrados IP55, sistemas de puesta a tierra, protección diferencial y mantenimiento preventivo.
+
+• Señalización
+
+Indicadores luminosos y rótulos de advertencia sobre atrapamiento, corte y operación automática.
+
+**4.2 Medidas administrativas**
+
+  - Procedimientos de ingreso seguro a la celda.
+  
+  - Protocolos de bloqueo y etiquetado (LOTO) durante mantenimiento.
+  
+  - Capacitación del personal en manipulación de robots industriales.
+  
+  - Lista de verificación previa a la puesta en marcha.
+  
+  - Acceso restringido a personal autorizado.
+
+**4.3 Equipo de protección personal**
+
+  - Guantes anticorte.
+  
+  - Protector ocular.
+  
+  - Calzado de seguridad con puntera reforzada.
+
+### 5. Evaluación del Riesgo Residual
+
+Tras implementar todas las medidas mencionadas, se reevaluó el nivel de peligrosidad de cada riesgo.
+
+Los peligros de corte y atrapamiento se reducen a un nivel bajo, ya que la instalación de guardas, señalización y acceso controlado elimina casi por completo la posibilidad de contacto directo con zonas peligrosas.
+
+El riesgo de aplastamiento por interacción con el robot, inicialmente clasificado como alto debido a la severidad del daño potencial, disminuye de manera significativa a un riesgo bajo-aceptable gracias al uso de enclavamientos, cercado perimetral, funciones STO y restricciones de movimiento dentro de la celda.
+
+El riesgo eléctrico, originalmente de nivel medio, se reduce a bajo mediante gabinetes protegidos, procedimientos LOTO y mantenimiento preventivo constante.
+
+En conjunto, los riesgos residuales obtenidos se encuentran dentro de los niveles aceptables para sistemas de automatización industrial, cumpliendo con los requisitos de ISO 12100 e ISO 10218-2.
 
 
